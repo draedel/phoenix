@@ -6,15 +6,14 @@ package phoenix_test
 
 import (
 	"crypto/tls"
+	"github.com/draedel/phoenix"
 	"io/ioutil"
 	"net/http"
 	"testing"
-
-	phoenix "."
 )
 
 var okHandler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("ok"))
+	_, _ = w.Write([]byte("ok"))
 })
 
 func simpleTLSRunFunc(runtime phoenix.Runtime) error {

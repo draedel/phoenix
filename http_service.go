@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/strukturag/httputils"
+	"github.com/draedel/httputils"
 )
 
 type httpService struct {
